@@ -51,6 +51,7 @@ const myAnotherFunction = async () => {
 myAnotherFunction(); */
 
 //-------------------------------------------------------------------//
+
 const myUsers = {
     usersLists: [],
 };
@@ -63,12 +64,13 @@ const myFunction = async () => {
 const AnotherFunction = async () => {
     const data = await myFunction();
     myUsers.usersLists = data;
+    console.log(myUsers.usersLists);
 }
 
 AnotherFunction();
-console.log(myUsers.usersLists);
+//console.log(myUsers.usersLists);
 
-// even tho i called the AnotherFunciton first the console.log() it won't wait..... the javascript won't wait to get the data we just need to wait and we just need to put that same console.log(myUsers.usersLists) inside the async AnotherFunction() function*******  
+// even tho i called the AnotherFunciton first the console.log() it won't wait..... the javascript won't wait to get the data we just need to wait and we just need to put that same console.log(myUsers.usersLists) inside the async AnotherFunction() function*******   
 
 
 
