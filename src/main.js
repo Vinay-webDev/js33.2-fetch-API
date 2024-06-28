@@ -44,7 +44,7 @@ const myFunction = async () => {
 }
 
 const myAnotherFunction = async () => {
-    const data = myFunction();
+    const data = await myFunction();
     console.log(data);
 }
 
