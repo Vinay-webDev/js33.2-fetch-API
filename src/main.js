@@ -2,8 +2,7 @@
 // pending
 
 //const users = fetch("https://jsonplaceholder.typicode.com/usres");
-
-const users = fetch("https://jsonplaceholder.typicode.com/users")
+/*const users = fetch("https://jsonplaceholder.typicode.com/users")
 .then(response => {
     return response.json();
 })
@@ -13,7 +12,22 @@ const users = fetch("https://jsonplaceholder.typicode.com/users")
     })
 });
 
-console.log(users);
+console.log(users); */
+//-------------------------------------------//
+//Async / Await
+
+const myUsers = {
+    users: []
+};
+
+// if we wanna use Async/Await while defining a function we need to declare it right at the begining or tell right at the begining*****
+
+async function myFunction() {
+    
+}
+
+
+
 
 
 
