@@ -3,7 +3,7 @@
 
 //const users = fetch("https://jsonplaceholder.typicode.com/usres");
 
-fetch("https://jsonplaceholder.typicode.com/users")
+const users = fetch("https://jsonplaceholder.typicode.com/users")
 .then(response => {
     return response.json();
 })
@@ -13,7 +13,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
     })
 });
 
-
+console.log(users);
 
 
 
