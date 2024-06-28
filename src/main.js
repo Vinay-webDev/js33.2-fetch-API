@@ -15,10 +15,10 @@
 console.log(users); */
 //-------------------------------------------//
 //Async / Await
-
+/*
 const myUsers = {
     users: []
-};
+}; */
 
 // if we wanna use Async/Await while defining a function we need to declare it right at the begining or tell right at the begining*****
 /*
@@ -36,7 +36,7 @@ const myFunction = async () => {
 }
 
 myFunction(); */
-
+/*
 const myFunction = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const jsonUserData = await response.json();
@@ -48,7 +48,44 @@ const myAnotherFunction = async () => {
     console.log(data);
 }
 
-myAnotherFunction();
+myAnotherFunction(); */
+
+//-------------------------------------------------------------------//
+const myUsers = {
+    usersLists: [],
+};
+const myFunction = async () => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const jsonUserData = response.json();
+    return jsonUserData;
+};
+
+const AnotherFunction = async () => {
+    const data = await myFunction();
+    myUsers.usersLists = data;
+}
+
+AnotherFunction();
+console.log(myUsers.usersLists);
+
+// even tho i called the AnotherFunciton first the console.log() it won't wait..... the javascript won't wait to get the data we just need to wait and we just need to put that same console.log(myUsers.usersLists) inside the async AnotherFunction() function*******  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
