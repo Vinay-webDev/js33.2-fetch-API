@@ -27,6 +27,7 @@ async function myFunction() {
 } */
 // we can also use arrow function if we want
 // remember we always have to use await within async function*****
+/*
 const myFunction = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const jsonUserData = await response.json();
@@ -34,7 +35,21 @@ const myFunction = async () => {
     return jsonUserData;
 }
 
-myFunction();
+myFunction(); */
+
+const myFunction = async () => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const jsonUserData = await response.json();
+    return jsonUserData;
+}
+
+const myAnotherFunction = async () => {
+    const data = myFunction();
+    console.log(data);
+}
+
+myAnotherFunction();
+
 
 
 
