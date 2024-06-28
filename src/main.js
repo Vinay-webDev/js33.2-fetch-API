@@ -21,12 +21,14 @@ const myUsers = {
 };
 
 // if we wanna use Async/Await while defining a function we need to declare it right at the begining or tell right at the begining*****
-
+/*
 async function myFunction() {
+
+} */
+// we can also use arrow function if we want
+const myFunction = async () => {
     
 }
-
-
 
 
 
